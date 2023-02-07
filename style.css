@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: white;
+  --bg-card-on: #02799D;
+  --text-color: #323238;
+  --bg-card-off: #E1E1E6;
+
+  --text-ff: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+
+  display: flex;
+  justify-content: center;
+  gap: 19.2rem;
+  position: relative;
+  margin-top: 19.6rem;
+
+  overflow: hidden;
+
+  color: var(--text-color);
+  font-family: var(--text-ff);
+  font-size: 12.61rem;
+  min-height: 100vh;
+}
+
+#timer {
+  display: flex;
+  margin-bottom: 4.8rem;
+
+  font-size: clamp(10.5rem, 10.5rem + 10vw, 12.6rem);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 4.0rem;
+  
+  width: clamp(20rem, 20rem + 30vw, 32.8rem);
+  height: clamp(8rem, 2rem + 10vw, 10.8rem);
+  
+}
+
+.hide {
+  display: none;
+}
+
+.sounds {
+  width: 30.8rem;
+  height: 33.6rem;
+}
+
+button {
+  background-color: var(--bg-card-off);
+  border: none;
+  border-radius: 2.4rem;
+
+  cursor: pointer;
+}
+
+.button-on {
+  background-color: var(--bg-card-on);
+}
+
+.forest:hover,
+.rain:hover,
+.coffeeshop:hover,
+.fireplace:hover {
+  background-color: var(--bg-card-on);
+}
